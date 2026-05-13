@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Endless Runner 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-layer">
+        <div id="score-display">Pontos: <span id="score">0</span></div>
+        <div id="game-over" class="hidden">
+            <h1>Fim de Jogo</h1>
+            <p>Sua pontuação: <span id="final-score">0</span></p>
+            <button id="restart-btn">Jogar Novamente</button>
+        </div>
+    </div>
+    
+    <!-- Importando Three.js via CDN (ES Modules) -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.150.1/build/three.module.js"
+        }
+      }
+    </script>
+    
+    <script type="module" src="game.js"></script>
+</body>
+</html>
