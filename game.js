@@ -171,7 +171,7 @@ window.addEventListener('resize', () => {
 
 function animate() {
     requestAnimationFrame(animate);
-    const delta = 0.016;
+    const delta = 0.50;
     if (gameActive) {
         if (playerModel) {
             playerModel.position.x += (currentLane * laneWidth - playerModel.position.x) * 0.15;
